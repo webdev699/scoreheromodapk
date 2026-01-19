@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Header for Drawer
     const drawerHeader = document.createElement('div');
     drawerHeader.className = 'drawer-header';
-    drawerHeader.innerHTML = '<div class="drawer-logo">Score<span>Hero</span>MOD</div><button class="drawer-close">&times;</button>';
+    drawerHeader.innerHTML = '<div class="drawer-logo">Score<span>Hero</span>MOD</div><button class="drawer-close" aria-label="Close Menu">&times;</button>';
     drawer.appendChild(drawerHeader);
 
     // Copy Links
@@ -37,18 +37,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeBtn = drawer.querySelector('.drawer-close');
 
     function toggleMenu() {
-        drawer.classList.toggle('open');
+        const isOpen = drawer.classList.toggle('open');
         overlay.classList.toggle('open');
-        document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : '';
+        document.body.style.overflow = isOpen ? 'hidden' : '';
     }
 
     mobileBtn.addEventListener('click', toggleMenu);
     closeBtn.addEventListener('click', toggleMenu);
-    overlay.addEventListener('click', toggleMenu);
+    
+    // Use passive event listener for better scroll performance
+    overlay.addEventListener('click', toggleMenu, { passive: true });
 
     // Close on link click
     const drawerLinks = drawer.querySelectorAll('a');
     drawerLinks.forEach(link => {
-        link.addEventListener('click', toggleMenu);
+        link.addEventListener('click', toggleMenu, { passive: true });
     });
 });

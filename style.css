@@ -37,6 +37,8 @@
 .animate-fade-up {
     animation: fadeInUp 0.8s ease-out forwards;
     opacity: 0;
+    will-change: opacity, transform;
+    /* Performance optimization */
 }
 
 .delay-100 {
@@ -56,7 +58,8 @@
     --bg-dark: #0f172a;
     --bg-card: #1e293b;
     --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
+    --text-secondary: #cbd5e1;
+    /* Improved contrast from #94a3b8 */
     --primary: #22c55e;
     --primary-hover: #16a34a;
     --accent: #8b5cf6;
@@ -64,7 +67,7 @@
     --danger: #ef4444;
     --glass: rgba(30, 41, 59, 0.7);
     --border: rgba(148, 163, 184, 0.1);
-    --font-main: 'Outfit', sans-serif;
+    --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --container-width: 1200px;
 }
 
@@ -789,6 +792,16 @@ footer {
 }
 
 /* Responsive Media Queries (Moved to END for cascade) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    .main-content {
+        padding: 2rem;
+    }
+}
+
 @media (max-width: 900px) {
     .content-wrapper {
         grid-template-columns: 1fr;
@@ -797,19 +810,36 @@ footer {
     .sidebar {
         display: none;
     }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
+        line-height: 1.1;
     }
 
     h2 {
         font-size: 2rem;
     }
 
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
     .hero {
         padding: 8rem 0 4rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
     }
 
     .pros-cons {
@@ -824,6 +854,16 @@ footer {
     /* Show Mobile Button */
     .mobile-menu-btn {
         display: block;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 1001;
+        transition: transform 0.3s;
+        padding: 0.5rem;
+        min-width: 44px;
+        min-height: 44px;
     }
 
     .hero-stats {
@@ -834,14 +874,100 @@ footer {
     .stat-item {
         width: 45%;
     }
+
+    .main-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .download-box {
+        padding: 2rem 1.5rem;
+    }
+
+    .file-info {
+        gap: 1rem;
+    }
+
+    .btn {
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
+    }
+
+    /* Improve touch targets */
+    .nav-links a,
+    .drawer-links a,
+    .footer-links a,
+    .toc a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
     .stat-item {
         width: 45%;
     }
 
     h1 {
         font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero {
+        padding: 7rem 0 3rem;
+    }
+
+    .hero-stats {
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .main-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .tech-table th,
+    .tech-table td {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .stat-item {
+        width: 100%;
     }
 }
