@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Score! Hero MOD APK Team</title>
+    <meta name="description"
+        content="Learn more about our mission to provide the safest, most reliable Score! Hero MOD APKs. Our history, our values, and why we do what we do.">
+    <link rel="icon" type="image/icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="canonical" href="https://scoreheromodapk.online/aboutus.html">
+    <meta property="og:url" content="https://scoreheromodapk.online/aboutus.html">
+    <meta property="og:type" content="website">
+    <style>
+        @font-face {
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 300 800;
+            font-display: optional;
+            src: url(https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NjuGObqx1XmO1I4TC0C4G-EiAou6Y.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            size-adjust: 100%;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes shine {
+            0% {
+                left: -100%;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
+        .animate-fade-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            will-change: opacity, transform;
+        }
+
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+
+        /* Global Reset & Base Styles */
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --primary: #22c55e;
+            --primary-hover: #16a34a;
+            --accent: #8b5cf6;
+            --accent-hover: #7c3aed;
+            --danger: #ef4444;
+            --glass: rgba(30, 41, 59, 0.7);
+            --border: rgba(148, 163, 184, 0.1);
+            --font-main: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            --container-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Typography */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-top: 3rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            margin-top: 2rem;
+            color: var(--primary);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #4ade80, #3b82f6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-gradient-alt {
+            background: linear-gradient(to right, #f472b6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--primary) 0%, #16a34a 100%);
+            color: #020617;
+            z-index: 1;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 14px rgba(34, 197, 94, 0.4);
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+            z-index: -1;
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 0 30px rgba(34, 197, 94, 0.5);
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            max-width: 100%;
+            font-family: var(--font-main);
+        }
+
+        /* Header */
+        header {
+            padding: 1.5rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: -1px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Enhanced Hero */
+        .hero {
+            padding: 10rem 0 6rem;
+            text-align: center;
+            min-height: 600px;
+            /* Prevent layout shift */
+        }
+
+        .hero-home {
+            background: radial-gradient(circle at 15% 50%, rgba(34, 197, 94, 0.15), transparent 25%), radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.15), transparent 25%), linear-gradient(180deg, #0f172a 0%, #172554 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-home::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero-pc {
+            background: radial-gradient(circle at 50% -20%, rgba(6, 182, 212, 0.2), transparent 70%), linear-gradient(135deg, #0f172a 0%, #083344 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 1.5rem auto 2.5rem;
+            font-size: 1.25rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .pc-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(6, 182, 212, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+            transform: perspective(500px) rotateX(60deg);
+            transform-origin: top;
+            z-index: 0;
+        }
+
+        .deco-circle {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -1;
+            animation: float 8s infinite alternate ease-in-out;
+        }
+
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            background: var(--accent);
+            top: -100px;
+            left: -100px;
+            opacity: 0.2;
+        }
+
+        .circle-2 {
+            width: 250px;
+            height: 250px;
+            background: var(--primary);
+            bottom: -50px;
+            right: -50px;
+            opacity: 0.2;
+            animation-delay: -4s;
+        }
+
+        /* Main Content */
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 3rem;
+            padding: 4rem 0;
+        }
+
+        .main-content {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+        }
+
+        .main-content a {
+            color: var(--primary);
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .main-content a:hover {
+            color: var(--primary-hover);
+            text-decoration: underline;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--primary);
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            background: -webkit-linear-gradient(var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+        }
+
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .pros,
+        .cons {
+            padding: 2rem;
+            border-radius: 16px;
+        }
+
+        .pros {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+        }
+
+        .cons {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
+
+        .pros h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        .cons h3 {
+            color: var(--danger);
+            margin-top: 0;
+        }
+
+        .pros ul li,
+        .cons ul li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #e2e8f0;
+        }
+
+        .pros ul li::before,
+        .cons ul li::before {
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+
+        .pros ul li::before {
+            content: "✓";
+            color: var(--primary);
+        }
+
+        .cons ul li::before {
+            content: "✕";
+            color: var(--danger);
+        }
+
+        .download-box {
+            background: linear-gradient(135deg, var(--bg-card), #1e293b);
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 4rem 0;
+            border: 1px solid var(--primary);
+            box-shadow: 0 0 30px rgba(34, 197, 94, 0.1);
+        }
+
+        .file-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .info-badge {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .info-badge strong {
+            color: #fff;
+            margin-left: 0.5rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .sidebar-widget {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar-widget h3 {
+            font-size: 1.25rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .toc li {
+            margin-bottom: 0.8rem;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .toc a:hover {
+            color: var(--primary);
+            padding-left: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: #020617;
+            padding: 4rem 0 2rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Drawer */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 1001;
+            transition: transform 0.3s;
+        }
+
+        .mobile-menu-btn:hover {
+            color: var(--primary);
+            transform: rotate(90deg);
+        }
+
+        .mobile-drawer-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(8px);
+            z-index: 1999;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+        }
+
+        .mobile-drawer-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-drawer {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--bg-card), #0f172a);
+            z-index: 2000;
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mobile-drawer.open {
+            transform: translateX(0);
+        }
+
+        .drawer-header {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, rgba(34, 197, 94, 0.1), transparent);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .drawer-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: -1px;
+            text-shadow: 0 2px 10px rgba(34, 197, 94, 0.3);
+        }
+
+        .drawer-logo span {
+            color: var(--primary);
+        }
+
+        .drawer-close {
+            background: none;
+            border: none;
+            color: #94a3b8;
+            font-size: 2.5rem;
+            cursor: pointer;
+            line-height: 1;
+            transition: 0.3s;
+        }
+
+        .drawer-close:hover {
+            color: var(--danger);
+            transform: rotate(90deg);
+        }
+
+        .drawer-links {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            gap: 1rem;
+        }
+
+        .drawer-links a {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            display: block;
+            padding: 1rem;
+            border-radius: 12px;
+            transition: 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .drawer-links a:hover,
+        .drawer-links a.active {
+            background: rgba(34, 197, 94, 0.1);
+            color: #fff;
+            border-color: rgba(34, 197, 94, 0.2);
+            transform: translateX(10px);
+        }
+
+        .drawer-links .btn {
+            display: block;
+            text-align: center;
+            margin-top: 1.5rem;
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
+            border: none;
+        }
+
+        .drawer-links .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+        }
+
+        .tech-specs {
+            margin: -4rem auto 4rem;
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .table-container {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .tech-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .tech-table th,
+        .tech-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tech-table tr:last-child th,
+        .tech-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .tech-table th {
+            color: var(--text-secondary);
+            font-weight: 500;
+            width: 40%;
+        }
+
+        .tech-table td {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .tech-icon {
+            margin-right: 0.5rem;
+            color: var(--primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 2rem;
+            }
+
+            .main-content {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                display: none;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                line-height: 1.1;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .hero {
+                padding: 8rem 0 4rem;
+                min-height: 500px;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+                background: none;
+                border: none;
+                color: #fff;
+                font-size: 2rem;
+                cursor: pointer;
+                z-index: 1001;
+                transition: transform 0.3s;
+                padding: 0.5rem;
+                min-width: 44px;
+                min-height: 44px;
+            }
+
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 1.5rem;
+            }
+
+            .stat-item {
+                width: 45%;
+            }
+
+            .main-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .download-box {
+                padding: 2rem 1.5rem;
+            }
+
+            .file-info {
+                gap: 1rem;
+            }
+
+            .btn {
+                padding: 0.875rem 2rem;
+                font-size: 1rem;
+            }
+
+            .nav-links a,
+            .drawer-links a,
+            .footer-links a,
+            .toc a {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .stat-item {
+                width: 45%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            .hero {
+                padding: 7rem 0 3rem;
+                min-height: 450px;
+            }
+
+            .hero-stats {
+                gap: 1rem;
+                margin-top: 2rem;
+            }
+
+            .stat-value {
+                font-size: 1.5rem;
+            }
+
+            .stat-label {
+                font-size: 0.8rem;
+            }
+
+            .btn {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .main-content {
+                padding: 1.5rem 1rem;
+            }
+
+            .tech-table th,
+            .tech-table td {
+                padding: 0.75rem 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .logo {
+                font-size: 1.25rem;
+            }
+
+            .stat-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Score<span>Hero</span>MOD</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="score-hero-for-pc.html">PC Version</a></li>
+                    <li><a href="score-hero-2-mod-apk.html">Score Hero 2</a></li>
+                    <li><a href="https://www.dropbox.com/scl/fi/4kbp71a4gc8nwj1oe8iak/score-hero-mod-apk.apk?rlkey=yydyxbv6953s9enn8wbvh0j1h&st=y7v0g4iy&dl=1"
+                            class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Download</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Hero -->
+    <section class="hero"
+        style="background: radial-gradient(circle at 50% 30%, rgba(99, 102, 241, 0.15), transparent 60%); padding: 8rem 0 4rem;">
+        <div class="container">
+            <h1>About <span class="text-gradient">Our Mission</span></h1>
+            <p>We are a dedicated collective of gaming enthusiasts and developers committed to delivering the ultimate
+                football experience without restrictions.</p>
+        </div>
+    </section>
+
+    <div class="container content-wrapper">
+        <main class="main-content" style="grid-column: span 2;">
+            <article>
+                <h2>Who We Are</h2>
+                <p>Welcome to <strong>Score Hero MOD</strong>, your number one source for the most reliable and
+                    performance-optimized version of the legendary soccer game. We are passionate football fans who
+                    believe that games should be about skill and story, not about waiting for timers or hitting
+                    paywalls.</p>
+
+                <p>Our team consists of veteran Android modders and security researchers who ensure that every file we
+                    share is tested, verified, and safe for your device. We have been part of the Score! Hero community
+                    since its very first release, and we understand what players truly want.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 3rem 0;">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h4>Our Vision</h4>
+                        <p>To create a community where players can enjoy their favorite games to the fullest, exploring
+                            every narrative branch and mastering every shot without artificial limitations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h4>Safety First</h4>
+                        <p>Security is our top priority. We use advanced sandboxing and multi-engine antivirus scanning
+                            to ensure that your gaming experience remains private and secure.</p>
+                    </div>
+                </div>
+
+                <h2>Why We Do It</h2>
+                <p>We believe the "Freemium" model often destroys the flow of beautifully designed games like Score!
+                    Hero. The energy system especially can be frustrating during challenging levels where you just want
+                    to "one more try" until you nail that perfect curve shot.</p>
+                <p>Our goal is to provide a "Sandbox Experience" where you can treat Score! Hero as a creative canvas.
+                    Want to see how your player looks in every kit? Want to try a 40-yard lob just because you can? With
+                    our MOD, you finally have the freedom to explore.</p>
+
+                <div
+                    style="background: var(--bg-dark); padding: 2rem; border-radius: 16px; border: 1px solid var(--border); margin-top: 3rem;">
+                    <h3>Our Commitment to You</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li
+                            style="margin-bottom: 1rem; color: var(--text-secondary); display: flex; align-items: flex-start;">
+                            <span style="color: var(--primary); margin-right: 1rem;">✓</span>
+                            <span><strong>Pure Gameplay:</strong> No annoying unskippable ads or popups in our
+                                distribution.</span>
+                        </li>
+                        <li
+                            style="margin-bottom: 1rem; color: var(--text-secondary); display: flex; align-items: flex-start;">
+                            <span style="color: var(--primary); margin-right: 1rem;">✓</span>
+                            <span><strong>Latest Versions:</strong> We strive to keep our MOD updated with the latest
+                                game releases.</span>
+                        </li>
+                        <li
+                            style="margin-bottom: 1rem; color: var(--text-secondary); display: flex; align-items: flex-start;">
+                            <span style="color: var(--primary); margin-right: 1rem;">✓</span>
+                            <span><strong>Community Focused:</strong> We listen to your feedback to improve our services
+                                and downloads.</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p style="font-size: 0.9rem; color: #64748b;">We are a dedicated team of mobile gaming enthusiasts
+                        providing high-quality, safe, and tested game modifications for the Android community. We do not
+                        accept payment for mods.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="score-hero-for-pc.html">PC Version</a></li>
+                        <li><a href="score-hero-2-mod-apk.html">Score Hero 2</a></li>
+                        <li><a href="index.html#install">How to Install</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="dmca.html">DMCA Disclaimer</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2021 Score Hero Fan Site. All Rights Reserved. <br><span
+                        style="font-size: 0.8rem; color: #475569;">"Score! Hero" is a trademark of First Touch Games
+                        Ltd. We are not affiliated with the developers.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
